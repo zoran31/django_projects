@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>问题索引</title>
+</head>
+<body>
+    {% for question in question_list %}
+        <li><a href="{% url 'polls:detail' question.id %}">{{ question }}</a></li>
+    {% endfor %}
+</body>
+</html>
